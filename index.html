@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Генератор паролей</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Генератор паролей</h1>
+        <form id="password-form">
+            <label for="length">Длина пароля:</label>
+            <input type="number" id="length" name="length" min="8" max="20" required>
+            <br>
+            <label for="use_special_chars">Использовать спецсимволы:</label>
+            <input type="checkbox" id="use_special_chars" name="use_special_chars">
+            <br>
+            <label for="use_uppercase">Использовать заглавные буквы:</label>
+            <input type="checkbox" id="use_uppercase" name="use_uppercase">
+            <br>
+            <label for="use_lowercase">Использовать строчные буквы:</label>
+            <input type="checkbox" id="use_lowercase" name="use_lowercase">
+            <br>
+            <label for="use_digits">Использовать цифры:</label>
+            <input type="checkbox" id="use_digits" name="use_digits">
+            <br>
+            <button type="button" id="generate-button">Генерировать</button>
+            <button type="button" id="copy-button">Копировать</button>
+        </form>
+        <div id="password-display"></div>
+        <a href="https://t.me/bootload3r">
+            <img src="https://static.vecteezy.com/system/resources/previews/017/221/839/original/telegram-logo-transparent-free-png.png" alt="Telegram" width="32" height="32">
+        </a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
